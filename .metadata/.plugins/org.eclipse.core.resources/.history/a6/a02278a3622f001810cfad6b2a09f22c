@@ -1,0 +1,48 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.util.ArrayList;
+
+import javax.swing.JPanel;
+
+public class BubblePanel extends JPanel {
+	
+	
+	private ArrayList<Bubble> bubbleList;
+	
+	public BubblePanel() {
+		
+		bubbleList = new ArrayList<Bubble>();
+		
+		setBackground(Color.BLACK);
+		setPreferredSize(new Dimension(600, 400));
+		
+	}
+	
+	public void paintComponent(Graphics page) {
+		super.paintComponent(page);
+		
+		// draw all the bubbles
+		
+		// write a number of bubbles on the screen
+		page.setColor(Color.green);
+		page.drawString("Count: " + bubbleList.size(), 5, 15);
+		
+	}
+	
+	private class Bubble{
+		
+		// a bubble x, y location and size
+		
+		public int x, y;
+		public int size;
+		
+		public Bubble(int newX, int newY, int newSize) {
+			x = newX;
+			y = newY;
+			size = newSize;
+		}
+		
+	}
+
+}

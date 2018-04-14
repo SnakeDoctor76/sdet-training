@@ -1,0 +1,15 @@
+
+public class MultiArray {
+
+	public static void main(String[] args) {
+
+		String[][] users = { { "Maria", "Willy", "07666666666" }
+							 
+		};
+		
+		users[1][0] = "John";
+		System.out.println(users[0][0]);
+
+	}
+
+}

@@ -1,0 +1,22 @@
+
+public class MultiArray {
+
+	public static void main(String[] args) {
+
+		String[][] users = { { "Maria", "Willy", "07666666666" }, 
+							 { "John", "Willa", "7856765465" },
+							 { "Julian", "Mechner", "45645645645" }, 
+							 { "Suzy", "Poarna", "45435354343" }
+		};
+		
+		for(int i = 0; i < users.length-1;i++) {
+			System.out.print(users[0][i] + "");
+//			for(int j = 0; j < users.length;j++) {
+//				
+//				System.out.println(users[j][0]);
+//			}
+		}
+
+	}
+
+}

@@ -1,0 +1,16 @@
+
+import java.awt.Dimension;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		GuessingGame game = new GuessingGame();
+		game.setSize(new Dimension(430,300));
+		game.setVisible(true);
+		game.initialiseRandom();
+
+	}
+
+}

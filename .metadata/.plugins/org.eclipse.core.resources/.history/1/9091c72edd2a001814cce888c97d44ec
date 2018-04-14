@@ -1,0 +1,55 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import javax.swing.SwingConstants;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.Font;
+import javax.swing.JPanel;
+import java.awt.SystemColor;
+
+public class GuessingGame extends JFrame {
+	private JTextField textField;
+	public GuessingGame() {
+		getContentPane().setLayout(null);
+		
+		JLabel lblJuliansHiloGuessing = new JLabel("Julian's Hi-Lo Guessing Game");
+		lblJuliansHiloGuessing.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblJuliansHiloGuessing.setBounds(-11, 36, 455, 14);
+		lblJuliansHiloGuessing.setHorizontalAlignment(SwingConstants.CENTER);
+		getContentPane().add(lblJuliansHiloGuessing);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(SystemColor.inactiveCaption);
+		panel.setBorder(null);
+		panel.setBounds(-11, 86, 455, 30);
+		getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblGuessANumber = new JLabel("Guess a number between between 1 and 100");
+		lblGuessANumber.setBounds(73, 8, 218, 14);
+		panel.add(lblGuessANumber);
+		lblGuessANumber.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		textField = new JTextField();
+		textField.setHorizontalAlignment(SwingConstants.CENTER);
+		textField.setBounds(296, 5, 44, 20);
+		panel.add(textField);
+		textField.setColumns(10);
+		
+		JButton btnGuess = new JButton("GUESS");
+		btnGuess.setBackground(SystemColor.textHighlight);
+		btnGuess.setBounds(179, 152, 89, 23);
+		getContentPane().add(btnGuess);
+		
+		JLabel lblEnterANumber = new JLabel("Enter a number above and click Guess!");
+		lblEnterANumber.setHorizontalAlignment(SwingConstants.CENTER);
+		lblEnterANumber.setBounds(-11, 211, 455, 14);
+		getContentPane().add(lblEnterANumber);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}

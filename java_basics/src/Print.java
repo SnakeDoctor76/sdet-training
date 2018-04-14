@@ -12,6 +12,7 @@ public class Print {
 		double result = celsius * 9/5 + 32;
 		System.out.println(celsius + " C" + " = " + result + " F");
 		System.out.println("Adding code for git");
+		System.out.println("Adding code from GIT");
 		
 
 	}
